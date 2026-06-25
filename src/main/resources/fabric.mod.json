@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "keepinventory",
+  "version": "${version}",
+  "name": "Keep Inventory",
+  "description": "Pemain tidak kehilangan item saat mati. Inventory tetap aman!",
+  "authors": [
+    "YourName"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "MIT",
+  "icon": "assets/keepinventory/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.keepinventory.mod.KeepInventoryMod"
+    ]
+  },
+  "mixins": [
+    "keepinventory.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
